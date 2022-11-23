@@ -7,7 +7,6 @@
 
 html {
     max-width: 1400px;
-    min-width: 992px;
     margin: 0 auto;
 }
 
@@ -333,11 +332,10 @@ h5 {
 }
 
 #chart_Line {
-    line-height: 62.5px;
+    align-items: center;
 }
 
 /* Activities */
-
 
 .act_Cards {
     flex-direction: column;
@@ -385,4 +383,77 @@ h5 {
 .stars i {
     height: 14px;
     line-height: 14px;
+}
+
+/* Media Queries Tablet */
+
+@media all and (min-width : 768px) and (max-width : 991px) {
+
+    body {
+        margin: 0 50px;
+    }
+
+    .menu_nav {
+        padding: 0;
+        margin-left: 30px;
+    }
+
+    .item_Filter {
+        margin-left: 15px;
+    }
+
+    /* .filter_Container {
+        padding: 8px 7px;
+    } */
+
+    .heb {
+        width: auto;
+        padding: 15px 5%;
+        margin-bottom: 50px;
+    }
+
+    .heb_Cards {
+        width: 30%;
+    }
+
+    .popular {
+        width: auto;
+        margin-bottom: 35px;
+    }
+
+    .pop_Cards {
+        width: 31%;
+    }
+
+    .pop_Cards h3 {
+        font-size: 0.875em;
+    }
+
+    .pop_Cards h4 {
+        font-size: 0.8125em;
+    }
+
+    .flex_Container_Row_Tab {
+        flex-direction: row;
+    }
+
+    .flex_Container_Col_Tab {
+        flex-direction: column;
+    }
+
+    .pop_Cards .card_Text {
+        padding: 12px 25px 12px 10px;
+        height: 145px;
+        width: 59%;
+    }
+
+    .act_Cards {
+        height: 267px;
+        width: 21%;
+    }
+
+    .act_Images {
+        height: 211px;
+    }
+
 }
