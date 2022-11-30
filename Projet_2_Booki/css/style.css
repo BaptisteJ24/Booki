@@ -27,7 +27,7 @@ body {
     padding: 0 50px;
 }
 
-.searchForm_Section {
+.main_Header {
     margin-bottom: 40px;
     padding: 0 50px;
 }
@@ -117,19 +117,9 @@ h3 {
     font-weight: 700;
 }
 
-h4 {
+.paragraph {
     font-size: 1em;
     font-weight: 400;
-}
-
-h5 {
-    font-size: 1.0625em;
-    font-weight: 700;
-}
-
-h6 {
-    font-size: 1.125em;
-    font-weight: 700;
 }
 
 /* Web Graphic styles */
@@ -290,18 +280,36 @@ h6 {
 
 .cards {
     background-color: #FFFFFF;
-    display: flex;
     border-radius: 20px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 
-.cards h4 {
+.cards_Link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.accomodation_CardsLink {
+    flex-direction: column;
+}
+
+.popular_CardsLink {
+    flex-direction: row;
+}
+
+.activities_CardsLink{
+    flex-direction: column;
+}
+
+.cards .paragraph {
     font-size: 0.875em;
 }
 
 /* Accomodations */
 
-.accomodation_Section {
+.accomodation_Container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -310,7 +318,7 @@ h6 {
     padding: 0 50px;
 }
 
-.accomodation {
+.accomodation_Section {
     margin-bottom: 10px;
     padding: 10px 3%;
     width: 59%;
@@ -318,7 +326,7 @@ h6 {
     /* box-sizing: border-box; */
 }
 
-.accomodation_Container {
+.accomodationCards_Container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -327,8 +335,6 @@ h6 {
 }
 
 .accomodation_Cards {
-    flex-direction: column;
-    justify-content: space-between;
     width: 32%;
     min-width: 169px;
     margin-bottom: 40px;
@@ -348,7 +354,7 @@ h6 {
 
 /* Popular Accomodation */
 
-.popular {
+.popular_Section {
     width: 26%;
     padding: 10px 3%;
     margin-bottom: 10px;
@@ -356,27 +362,24 @@ h6 {
     /* box-sizing: border-box; */
 }
 
-.popular_Container {
+.popularCards_Container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.pop_Cards {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.popular_Cards {
     margin-bottom: 30px;
     height: 145px;
     width: 100%;
 }
 
-.pop_Cards h3 {
+.popular_Cards h3 {
     margin-bottom: 8px;
 }
 
-.pop_Images {
+.popular_Images {
     width: 40%;
     height: 145px;
     object-fit: cover;
@@ -396,12 +399,12 @@ h6 {
 
 /* Activities */
 
-.activities_Section {
+.activities_Container {
     margin-bottom: 40px;
     padding: 0 50px;
 }
 
-.activities {
+.activities_Section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -409,28 +412,28 @@ h6 {
     /* box-sizing: border-box; */
 }
 
-.activities_Container{
+.activitiesCards_Container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.act_Cards {
+.activities_Cards {
     flex-direction: column;
     justify-content: flex-start;
     width: 23%;
     height: 450px;
 }
 
-.act_Images {
+.activities_Images {
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     height: 390px;
 }
 
-.act_Cards h3 {
+.activities_Cards h3 {
     margin: auto 6%;
 }
 
@@ -445,7 +448,7 @@ h6 {
     height: 80px;
 }
 
-.pop_Cards .card_Info {
+.popular_Cards .card_Info {
     box-sizing: border-box;
     padding: 15px 12px;
     height: 145px;
@@ -490,7 +493,8 @@ h6 {
 }
 
 .footer_Title {
-    margin-bottom: 20px;
+    font-size: 1.125em;
+    margin: 0 0 20px;
 }
 
 .footer_Link {
@@ -502,7 +506,7 @@ h6 {
 
 @media all and (min-width : 768px) and (max-width : 991px) {
 
-    .accomodation {
+    .accomodation_Section {
         width: auto;
         padding: 15px 5%;
         margin-bottom: 50px;
@@ -512,39 +516,31 @@ h6 {
         width: 30%;
     }
 
-    .popular {
+    .popular_Section {
         width: auto;
         margin-bottom: 35px;
     }
 
-    .pop_Cards {
-        width: 31%;
-    }
-
-    .pop_Cards h3 {
-        font-size: 0.875em;
-    }
-
-    .pop_Cards h4 {
-        font-size: 0.8125em;
-    }
-
-    .popular_Container {
+    .popularCards_Container {
         flex-direction: row;
     }
 
-    .pop_Cards .card_Info {
+    .popular_Cards {
+        width: 31%;
+    }
+
+    .popular_Cards .card_Info {
         padding: 12px 25px 12px 10px;
         height: 145px;
         width: 59%;
     }
 
-    .act_Cards {
+    .activities_Cards {
         height: 267px;
         width: 21%;
     }
 
-    .act_Images {
+    .activities_Images {
         height: 211px;
     }
 
@@ -636,7 +632,7 @@ h6 {
         color: #0065FC;
     }
 
-    .searchForm_Section {
+    .main_Header {
         padding: 0 20px;
     }
 
@@ -687,7 +683,7 @@ h6 {
 
     /* Accomodation Section */
 
-    .accomodation_Section {
+    .accomodation_Container {
         flex-direction: column-reverse;
         padding: 0;
         margin-bottom: 40px;
@@ -695,29 +691,29 @@ h6 {
 
     /* Popular Accomodation */
 
-    .popular {
+    .popular_Section {
         width: 100%;
         border-radius: 0;
         padding: 0 20px;
         box-sizing: border-box;
     }
 
-    .pop_Cards {
+    .popular_Cards {
         min-width: 335px;
         width: 60%;
     }
 
     /* Accomodations */
 
-    .accomodation {
+    .accomodation_Section {
         width: 100%;
         border-radius: 0;
         padding: 0 20px;
         background: white;
-        box-sizing: border-box; 
+        box-sizing: border-box;
     }
 
-    .accomodation_Container {
+    .accomodationCards_Container {
         flex-direction: column;
     }
 
@@ -733,22 +729,22 @@ h6 {
 
     /* Activities */
 
-    .activities_Section {
+    .activities_Container {
         margin-bottom: 40px;
         padding: 0;
     }
 
-    .activities {
+    .activities_Section {
         width: 100%;
         padding: 0 20px;
         box-sizing: border-box;
     }
 
-    .activities_Container{
+    .activitiesCards_Container {
         flex-direction: column;
     }
 
-    .act_Cards {
+    .activities_Cards {
         width: 60%;
         min-width: 335px;
         height: 190px;
@@ -756,11 +752,11 @@ h6 {
         margin-bottom: 24px;
     }
 
-    .act_Images {
+    .activities_Images {
         height: 134px;
     }
 
-    .activities_Title{
+    .activities_Title {
         width: 40%;
         max-width: 210px;
     }
@@ -773,11 +769,11 @@ h6 {
         height: auto;
         padding: 45px 20px 0;
     }
-    
+
     .footer_List {
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
     }
-    
+
 }
