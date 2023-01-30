@@ -86,7 +86,7 @@ li {
     padding: 40px 0;
 }
 
-.active,
+.active, /* active class for JavaScript function */
 .menu_Link:hover {
     box-shadow: inset 0 2px #0065FC;
 }
