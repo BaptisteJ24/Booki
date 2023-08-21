@@ -1,4 +1,4 @@
-# Projet_2_Booki
+# Booki
 
 Mission : Transformez une maquette en site web avec HTML & CSS.
 
@@ -9,6 +9,6 @@ Compétences :
 
 Fait par : Baptiste JAN
 
-Disponible sur : https://baptiste-jan.fr/Projet_2_Booki/index.html
+Disponible sur : https://baptistej24.github.io/Booki/
 
 Mis à jour le 21/08/2023.
